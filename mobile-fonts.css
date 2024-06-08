@@ -1,0 +1,39 @@
+@media only screen and (max-width: 600px) {
+    header section h1 {
+        font-size: 30px;
+    }
+
+    form button {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+
+    main h2 {
+        font-size: 30px;
+    }
+
+    main p {
+        font-size: 15px;
+    }
+
+    main .section-feature {
+        padding: 10px 0;
+    }
+
+    main > section h2 {
+        font-size: 20px;
+    }
+
+    ul div {
+        font-size: 14px;
+    }
+
+    ul li label {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    label::after {
+        font-size: 22px;
+    }
+}
