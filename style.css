@@ -393,4 +393,7 @@ form {
     text-align: center;
 }
 
+.footer-links {
+    flex-direction: column;
+}
 }
