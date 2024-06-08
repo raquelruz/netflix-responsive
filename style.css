@@ -339,3 +339,23 @@ footer > p {
     margin-bottom: 10px;
 }
 
+/* Dispositivos grandes (ordenadores portátiles/escritorios, 992px hasta 1.200px) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-color: red;
+    }
+}
+
+/* Dispositivos medianos (tabletas en orientación horizontal, 768px y más) */
+@media only screen and (min-width: 481px) and (max-width: 991px) {
+    body {
+        background-color: blue;
+    }
+}
+
+/* Dispositivos pequeños (teléfonos) */
+@media only screen and (max-width: 480px) {
+    body {
+        background-color: yellow;
+    }
+}
