@@ -408,7 +408,7 @@ footer>p {
     }
 
     form input {
-        width: 80%;
+        width: 85%;
     }
 
 
@@ -430,7 +430,16 @@ footer>p {
         text-align: center;
     }
 
+    .section-feature h2 {
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
     .section-img {
+        order: 1;
+    }
+
+    #order {
         order: 1;
     }
 
@@ -439,7 +448,13 @@ footer>p {
     }
 
     .footer-links {
-        flex-direction: column;
-    }
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
 }
-    }
+
+footer>div div {
+    margin-bottom: 0px;
+}
+}
