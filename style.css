@@ -60,6 +60,19 @@ nav div button:nth-child(1) img {
     margin-left: 10px;
 }
 
+nav div button:nth-child(2) {
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 7px 10px;
+}
+
+nav div button:nth-child(2) img {
+    width: 10px;
+    margin-left: 10px;
+}
+
 button i {
     color: #fff;
     width: 10px;
@@ -144,13 +157,11 @@ main {
     border-radius: 4px;
     color: white;
 
-    background: radial-gradient(
-        51.39% 511.66% at 47.68% -217.91%,
-        #ff9900 0%,
-        #e50914 17.27%,
-        #0e1b4f 79.44%,
-        #000413 100%
-    );
+    background: radial-gradient(51.39% 511.66% at 47.68% -217.91%,
+            #ff9900 0%,
+            #e50914 17.27%,
+            #0e1b4f 79.44%,
+            #000413 100%);
 }
 
 .offer-text p:first-child {
@@ -209,13 +220,13 @@ main h2 {
     margin-bottom: 20px;
 }
 
-body > section {
+body>section {
     padding: 10px 12%;
     text-align: center;
     font-size: 18px;
 }
 
-body > section h2 {
+body>section h2 {
     font-size: 40px;
     font-weight: 500;
 }
@@ -265,25 +276,25 @@ ul div {
     transition: max-height 0.5s, padding 0.5s;
 }
 
-ul input[type="checkbox"]:checked + label + div {
+ul input[type="checkbox"]:checked+label+div {
     max-height: 600px;
     padding: 30px 20px;
 }
 
-ul input[type="checkbox"]:checked + label::after {
+ul input[type="checkbox"]:checked+label::after {
     transform: rotate(135deg);
 }
 
-main > section small {
+main>section small {
     font-size: 13px;
 }
 
-main > section form {
+main>section form {
     max-width: 600px;
     margin: 20px auto 60px;
 }
 
-footer > div {
+footer>div {
     display: flex;
     align-items: center;
     width: 100%;
@@ -302,13 +313,13 @@ footer h2 {
     margin-bottom: 30px;
 }
 
-footer > div div {
+footer>div div {
     flex-basis: 25%;
     flex-grow: 1;
     margin-bottom: 20px;
 }
 
-footer > div div a {
+footer>div div a {
     display: block;
     color: #777;
     font-size: 14px;
@@ -316,12 +327,12 @@ footer > div div a {
     text-decoration: none;
 }
 
-footer > div {
+footer>div {
     align-items: flex-start;
     padding: 10px 0px;
 }
 
-footer > button > img {
+footer>button>img {
     padding-left: 2px;
     width: 12px;
 }
@@ -333,67 +344,19 @@ footer button {
     border-radius: 3px;
 }
 
-footer > p {
+footer>p {
     font-size: 14px;
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
 /* Dispositivos grandes (ordenadores portátiles/escritorios, 992px hasta 1.200px) */
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-    body {
-        background-color: red;
-    }
-}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {}
 
 /* Dispositivos medianos (tabletas en orientación horizontal, 768px y más) */
-@media only screen and (min-width: 481px) and (max-width: 991px) {
-    body {
-        background-color: blue;
-    }
-}
+@media only screen and (min-width: 481px) and (max-width: 991px) {}
 
 /* Dispositivos pequeños (teléfonos) */
 @media only screen and (max-width: 480px) {
-    body {
-        background-color: yellow;
-    }
 
-header {
-    min-height: 800px;
-}
-
-
-form {
-    flex-direction: column;
-    padding: 15px 0px;
-    margin: 0 auto;
-}
-
-.offer-container {
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.section-feature {
-    flex-direction: column;
-}
-
-.section-text {
-    margin-top: 150px;
-    order: 0;
-    text-align: center;
-}
-
-.section-img {
-    order: 1;
-}
-
-.section-text-two {
-    text-align: center;
-}
-
-.footer-links {
-    flex-direction: column;
-}
-}
+    }
